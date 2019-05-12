@@ -38,8 +38,8 @@ class Trsanlate_Persian(text_problems.Text2TextProblem):
         }]
 
     def generate_samples(self, data_dir, tmp_dir, dataset_split):
-        source = open('Nueral Machine Translation/data/en/PEN.ixml')
-        target = open('Nueral Machine Translation/data/fa/PEN.ixml')
+        source = open('Nueral-Machine-Translation/data/en/PEN.ixml')
+        target = open('Nueral-Machine-Translation/data/fa/PEN.ixml')
         en_sens = source.read().split('\n')
         de_sens = target.read().split('\n')
         for en, de in zip(en_sens, de_sens):
